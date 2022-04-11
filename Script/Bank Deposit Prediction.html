@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<title>Bank Deposit Prediction</title>
+<style>.OpenVideo {
+  display: none !important;
+  visibility: hidden !important; }
+
+.ov-video-popup, .ov-theatre-mode {
+  position: fixed !important;
+  top: 0px !important;
+  left: 0px !important;
+  bottom: 0px !important;
+  right: 0px !important;
+  width: 100% !important;
+  height: 100% !important;
+  border: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  z-index: 999999999999999 !important; }
+
+.ov-theater-mode {
+  background: rgba(0, 0, 0, 0.95) !important;
+  pointer-events: none;
+  transition: opacity 0.3s;
+  opacity: 0;
+  display: block;
+  cursor: default; }
+
+.ov-iframe-theaterMode {
+  position: fixed !important;
+  width: 70vw !important;
+  height: calc(( 9/ 16)*70vw) !important;
+  top: calc((100vh - ( 9/ 16)*70vw)/2) !important;
+  left: calc((100vw - 70vw)/2) !important;
+  z-index: 2147483646 !important; }
+
+.ov-theater-mode {
+  position: fixed !important;
+  left: 20vw !important;
+  top: 20vh !important;
+  width: 50vw !important;
+  height: calc(9/16*50vw) !important; }
+</style></head>
+
+<body data-new-gr-c-s-check-loaded="8.896.0" data-gr-ext-installed="" data-new-gr-c-s-loaded="8.896.0">
+	   <center>
+	   <h2> Bank Long-term Deposit Prediction </h2><p></p><p>
+	   </p><form method="post" action="/result/">
+                  <table width="50%" border="1">
+                     <tbody><tr>
+                        <td>Age</td>
+                        <td>
+                        <input type="text" name="age" value="69">
+                        </td>
+                     </tr>
+					 <tr>
+                        <td>Job</td>
+                        <td>
+                        <select name="job">
+							  <option value="admin." selected="selected">admin.</option>
+							  <option value="technician">technician</option>
+							  <option value="services">services</option>
+							  <option value="management">management</option>
+							  <option value="retired">retired</option>
+							  <option value="blue-collar">blue-collar</option>
+							  <option value="unemployed">unemployed</option>
+							  <option value="enterpreneur">entrepreneur</option>
+							  <option value="housemaid">housemaid</option>
+							  <option value="self-employed">self-employed</option>
+							  <option value="student">student</option>
+							  <option value="unknown">unknown</option>
+						</select>
+                        </td>
+                     </tr>
+					 <tr>
+                        <td>Marital</td>
+                        <td>
+                        <select name="marital">
+							  <option value="married" selected="selected">married</option>
+							  <option value="single">single</option>
+							  <option value="divorced">divorced</option>
+						</select>
+                        </td>
+                     </tr>
+					 <tr>
+                        <td>Education</td>
+                        <td>
+                        <select name="education">
+							  <option value="primary" selected="selected">primary</option>
+							  <option value="secondary">secondary</option>
+							  <option value="tertiary">tertiary</option>
+							  <option value="unknown">unknown</option>
+						</select>
+                        </td>
+                     </tr>
+					 <tr>
+                        <td>Default</td>
+                        <td>
+                        <select name="default">
+							  <option value="no" selected="selected">no</option>
+							  <option value="yes">yes</option>
+						</select>
+                        </td>
+                     </tr>
+					 <tr>
+                        <td>Balance</td>
+                        <td>
+                        <input type="text" name="balance" value="2000">
+                        </td>
+                     </tr>
+					 <tr>
+                        <td>Housing</td>
+                        <td>
+                        <select name="housing">
+							  <option value="no" selected="selected">no</option>
+							  <option value="yes">yes</option>
+						</select>
+                        </td>
+                     </tr>
+					 <tr>
+                        <td>Loan</td>
+                        <td>
+                        <select name="loan">
+							  <option value="no" selected="selected">no</option>
+							  <option value="yes">yes</option>
+						</select>
+                        </td>
+                     </tr>
+					 <tr>
+                        <td>Contact</td>
+                        <td>
+                        <select name="contact">
+							  <option value="telephone" selected="selected">telephone</option>
+							  <option value="cellular">cellular</option>
+							  <option value="unknown">unknown</option>
+						</select>
+                        </td>
+                     </tr>
+					 <tr>
+                        <td>Day</td>
+                        <td>
+                        <input type="text" name="day" value="5">
+                        </td>
+                     </tr>
+					 <tr>
+                        <td>Month</td>
+                        <td>
+                        <select name="month">
+							  <option value="jan" selected="selected">jan</option>
+							  <option value="feb">feb</option>
+							  <option value="mar">mar</option>
+							  <option value="apr">apr</option>
+							  <option value="may">may</option>
+							  <option value="jun">jun</option>
+							  <option value="jul">jul</option>
+							  <option value="aug">aug</option>
+							  <option value="sep">sep</option>
+							  <option value="oct">oct</option>
+							  <option value="nov">nov</option>
+							  <option value="dec">dec</option>
+						</select>
+                        </td>
+                     </tr>
+					 <tr>
+                        <td>Duration</td>
+                        <td>
+                        <input type="text" name="duration" value="1000">
+                        </td>
+                     </tr>
+					 <tr>
+                        <td>Campaign</td>
+                        <td>
+                        <input type="text" name="campaign" value="1">
+                        </td>
+                     </tr>
+					<tr>
+                        <td>Pdays</td>
+                        <td>
+                        <input type="text" name="pdays" value="-1">
+                        </td>
+                     </tr>
+					<tr>
+                        <td>Previous</td>
+                        <td>
+                        <input type="text" name="previous" value="0">
+                        </td>
+                     </tr>
+					<tr>
+                        <td>Poutcome</td>
+                        <td>
+                        <select name="poutcome">
+							  <option value="failure" selected="selected">failure</option>
+							  <option value="success">success</option>
+							  <option value="other">other</option>
+							  <option value="unknown">unknown</option>
+						</select>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td> </td>
+                        <td><input type="reset" value="Reset"> 
+                           <input name="submit" type="submit" value="Submit">
+                        </td>
+                     </tr>
+                  </tbody></table>
+</form>
+<p></p><p>
+
+</p><p>
+
+</p></center><script src="Bank%20Deposit%20Prediction_files/searchvideos.js" async=""></script></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
